@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+  </head>
+  <body>
+
+    <header clas="header" id="page-load">
+        <section>
+           <h1> Coding Review Quiz!</h1>
+            <button id="start-button"> Start </button>
+        </section>
+
+    </header>
+     <section id="quiz-block" class="hide">
+            <div id="questionPrompt" class="question-styling">
+                <ul id="ul">
+                    <li id="p1" onclick="button(this)"></li>
+                    <li id="p2" onclick="button(this)"></li>
+                    <li id="p3" onclick="button(this)"></li>
+                    <li id="p4" onclick="button(this)"></li>
+                </ul>
+            </div>
+        <section class="question timer">
+            <div class="timer-text">
+            <div class="large-font timer-count">50</div>
+            <h3>Time Remaining</h3>
+            </div>
+        </section>
+        <section class="score">
+            <div class="next"> 
+                <button id="nxtBtn" type="button" onclick="button(this)">
+                Next Prompt
+                </button>
+            </div>
+        </section>
+        
+        <section class="score-card">
+            Your Score Is: <span id="scoreCard">0</span>
+        </section>
+
+        <div class="reset">
+            <button id="reset-button">Try again!</button>
+        </div>
+        <script src="assets/script.js"></script>
+    </section>
